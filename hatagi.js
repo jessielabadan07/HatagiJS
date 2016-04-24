@@ -7,20 +7,18 @@
 
 (function(HatagiNamespace) {
 
-	var Hatagi = (function() {
+  var Hatagi = (function() {
+  	
+    function Hatagi() {
+	  this.list = [];
+	};
 
-		function Hatagi() {
-			this.list = [];
-		};
+	Hatagi.prototype.init = function() { };
 
-		Hatagi.prototype.init = function() {
+	return Hatagi;
 
-		};
+  })();
 
-		return Hatagi;
-
-	})();
-
-	HatagiNamespace.Hatagi = Hatagi;
+  HatagiNamespace.Hatagi = Hatagi;
 
 })(window.HatagiNamespace || (window.HatagiNamespace = {}));
